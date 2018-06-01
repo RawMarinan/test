@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		  function Module(){
+		    const something = 'Do A'
+		    const another = 'Do B'
+		    function doA(){
+		      console.log(something)
+		    }
+		
+		    function doB(){
+		      console.log(another)
+		    }
+		    return {
+		      doA,
+		      doB
+		    }
+		  }
+		  const foo = Module();
+		  foo.doB();
+		</script>
+
+	</body>
+</html>
